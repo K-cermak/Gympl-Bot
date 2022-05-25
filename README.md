@@ -32,5 +32,14 @@
 
 <br/>
 
+### Something about me
+- My website: https://k-cermak.com/
+- My GitHub: https://github.com/K-cermak/
+- My Twitter: https://twitter.com/K_cermak
+
+
+<br/>
+
 ### Used libraries
 - https://github.com/danieldevine/bird-elephant
+
