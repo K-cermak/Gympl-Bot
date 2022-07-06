@@ -1,7 +1,7 @@
 # Gympl Bot
 
 ### What's a Gympl Bot?
-- It's a Twitter bot that periodically posts the text of the legendary and great Czech movie Gympl.
+- It's a Twitter bot that periodically posts the text/ screenshots from the legendary and great Czech movie Gympl.
 - https://twitter.com/GymplFilm
 - https://youtu.be/PSLjsHcbcJU
 
