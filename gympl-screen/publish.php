@@ -1,6 +1,6 @@
 <?php
     require_once("keys.php");
-    require_once("vendor/autoload.php");
+    require_once(__DIR__ . "/../vendor/autoload.php");
     $directory = "data";
 
     //get last id from last.txt
