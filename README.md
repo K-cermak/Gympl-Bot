@@ -34,7 +34,7 @@
 <br/>
 
 ### Something about me
-- My website: https://k-cermak.com/
+- My website: https://karlosoft.com/
 - My GitHub: https://github.com/K-cermak/
 - My Twitter: https://twitter.com/K_cermak
 
