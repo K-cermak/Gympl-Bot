@@ -30,6 +30,10 @@
             'embeds' => [$embed]
         ];
 
+        if ($status === false) {
+            $data['content'] = '<@' . PING_ID . '>';
+        }
+
         $jsonData = json_encode($data);
         $ch = curl_init(DISCORD_WEBHOOK);
 
