@@ -1,5 +1,12 @@
 <?php
-    function sendWebhook($status , $day) {
+    function shutdown_check() {
+        $error = error_get_last();
+        if ($error['type'] !== NULL) {
+            sendWebhook(false, 0);
+        }
+    }
+
+    function sendWebhook($status, $day) {
         $embed = [
             'fields' => [
                 [
