@@ -1,7 +1,7 @@
 <?php
     function shutdown_check() {
         $error = error_get_last();
-        if ($error['type'] !== NULL) {
+        if (isset($error['type'] ) && $error['type'] === E_ERROR) {
             sendWebhook(false, 0);
         }
     }
