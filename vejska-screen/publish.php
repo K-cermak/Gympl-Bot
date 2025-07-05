@@ -12,14 +12,14 @@
         exit();
     }
 
-    // add trailing zeros 
+    // add trailing zeros
     $fileName = str_pad($lastId, 6, "0", STR_PAD_LEFT);
 
     $context = stream_context_create(["ssl" => [
         "verify_peer"      => false,
         "verify_peer_name" => false]
     ]);
-    $fileContent = file_get_contents(URL_START . $fileName . URL_MID . $fileName . URL_END, false, $context);
+    $fileContent = file_get_contents(URL_START . $fileName . URL_END, false, $context);
 
     $image = imagecreatefromstring($fileContent);
     $scaled_image = imagescale($image, 1920, 1080);
