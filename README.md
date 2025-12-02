@@ -1,7 +1,7 @@
 # Gympl Bot
 
 ### What's a Gympl Bot?
-- It's a Twitter bot that periodically posts the text/ screenshots from the legendary and great Czech movie Gympl / Vejška.
+- It's a Twitter bot that periodically posts the text / screenshots from the legendary Czech movie Gympl / Vejška.
 - https://twitter.com/GymplFilm
 - https://youtu.be/PSLjsHcbcJU
 - https://youtu.be/BKCk-_j3yWc
@@ -33,7 +33,7 @@
 
 <br/>
 
-### Something about me
+### Something about me:
 - My website: https://karlosoft.com/
 - My GitHub: https://github.com/K-cermak/
 - My Twitter: https://twitter.com/K_cermak
@@ -41,5 +41,5 @@
 
 <br/>
 
-### Used libraries
+### Used libraries:
 - https://github.com/danieldevine/bird-elephant
