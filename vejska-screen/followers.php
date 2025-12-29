@@ -14,7 +14,7 @@
         try {
             $twitter = new \Coderjerk\BirdElephant\BirdElephant($credentials);
 
-            $user = $twitter->users()->lookup(['polish_animals'], [
+            $user = $twitter->users()->lookup(['GymplFilm'], [
                 'user.fields' => 'public_metrics'
             ]);
 
