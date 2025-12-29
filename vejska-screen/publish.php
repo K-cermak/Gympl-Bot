@@ -1,7 +1,7 @@
 <?php
     require_once("keys.php");
     require_once("webhook.php");
-    require_once(__DIR__ . "/../vendor/autoload.php");
+    require_once(__DIR__ . "/vendor/autoload.php");
     register_shutdown_function("shutdown_check");
 
     $lastId = file_get_contents(__DIR__ . "/last.txt");
