@@ -1,5 +1,5 @@
 <?php
-    require_once("keys.php");
+    require_once(__DIR__ . "/keys.php");
     require_once(__DIR__ . "/../vendor/autoload.php");
     $directory = "data";
 

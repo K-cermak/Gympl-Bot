@@ -10,7 +10,7 @@
     }
 
     if ($argv[1] == "twitter") {
-        require_once __DIR__ . "/followers.php";
+        require_once __DIR__ . "/twitter/followers.php";
         $count = getTwitterFollowers();
         echo $count . "\n";
     }

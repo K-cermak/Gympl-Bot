@@ -1,11 +1,11 @@
 <?php
-    require_once("keys.php");
-    require_once("webhook.php");
-    require_once(__DIR__ . "/vendor/autoload.php");
+    require_once(__DIR__ . "/../keys.php");
+    require_once(__DIR__ . "/../webhook.php");
+    require_once(__DIR__ . "/../vendor/autoload.php");
     register_shutdown_function("shutdown_check");
 
-    $lastId = file_get_contents(__DIR__ . "/last.txt");
-    $lastId = trim($lastId);
+    $lastId = file_get_contents(__DIR__ . "/../last.txt");
+    $lastId = (int) trim($lastId);
 
     if ($lastId > 112100) {
         echo "ERORR: No new image";
@@ -46,11 +46,11 @@
     
     $response = $twitter->tweets()->tweet($tweet);
     if (isset($response->data->id)) {
-        echo "Tweeted: " . $text . "\n";
-        file_put_contents(__DIR__ . "/last.txt", $lastId + 1);
+        echo "[INFO] Tweeted: " . $text . "\n";
+        file_put_contents(__DIR__ . "/../last.txt", $lastId + 1);
         sendWebhook(true, $lastId + 1);
     } else {
-        echo "ERROR: Tweet failed\n";
+        echo "[ERROR] Tweet failed\n";
         sendWebhook(false, $lastId + 1);
     }
 

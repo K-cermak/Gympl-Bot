@@ -48,10 +48,10 @@
         curl_close($ch);
 
         if ($httpCode === 204) {
-            echo "Webhook sent successfully\n";
+            echo "[INFO] Webhook sent successfully\n";
         } else {
-            echo "ERROR sending webhook: $httpCode\n";
-            echo "ERROR Response: $response\n";
+            echo "[ERROR] Sending webhook: $httpCode\n";
+            echo "[ERROR] Response: $response\n";
         }
     }
 ?>
