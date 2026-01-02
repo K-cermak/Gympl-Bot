@@ -8,7 +8,7 @@
     $lastId = (int) trim($lastId);
 
     if ($lastId > 112100) {
-        echo "ERORR: No new image";
+        echo "[ERROR] No new image";
         exit();
     }
 

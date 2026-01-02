@@ -1,11 +1,11 @@
 <?php
     if ($argc != 2) {
-        echo "Usage: php follower_count.php <platform>\n";
+        echo "[ERROR] Usage: php followerCount.php <platform>\n";
         exit(1);
     }
 
     if ($argv[1] != "twitter") {
-        echo "Invalid platform. Use twitter.\n";
+        echo "[ERROR] Invalid platform. Use twitter.\n";
         exit(1);
     }
 
