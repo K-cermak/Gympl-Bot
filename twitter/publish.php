@@ -1,7 +1,15 @@
 <?php
     require_once(__DIR__ . "/../keys.php");
-    require_once(__DIR__ . "/../webhook.php");
+    require_once(__DIR__ . "/../beacon.php");
     require_once(__DIR__ . "/../vendor/autoload.php");
+
+    function shutdown_check() {
+        $error = error_get_last();
+        if (isset($error['type'] ) && $error['type'] === E_ERROR) {
+            sendWebhook(false, 0);
+        }
+    }
+
     register_shutdown_function("shutdown_check");
 
     $lastId = file_get_contents(__DIR__ . "/../last.txt");
